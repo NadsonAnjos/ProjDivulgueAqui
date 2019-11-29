@@ -1,0 +1,47 @@
+Equipe:
+Karine Santos
+Kelvin Gomes
+Nadson Anjos
+
+create database DivulgueAquiDB
+use DivulgueAquiDB
+
+create table Anunciante(
+	nomeAnunciante varchar(70) not null,
+	nomeComercio varchar(45) not null,
+	email varchar(60) not null,
+	tipoComercio varchar(45) not null,
+	valorPacote float not null,
+	senha varchar(12) not null,
+	anunciosinseridosQtd int,
+	latLong varchar(70) not null,
+	limite int not null,
+	constraint pk_anunciante primary key(email)
+);
+
+create table Anuncios(
+	id_anuncio int identity(1,1) not null,
+	diretorio varchar(100) not null,
+    constraint pk_anuncio primary key(id_anuncio)
+);
+
+create table Anunciante_Anuncios(
+	id_aa int identity(1,1) not null,
+	email varchar(60) not null,
+	id_anuncio int not null,
+	constraint pk_id_aa primary key(id_aa),
+	constraint fk_email_aa foreign key(email) references Anunciante(email),
+	constraint fk_anuncio_aa foreign key(id_anuncio) references Anuncios(id_anuncio)
+);
+
+create table LoginAdm(
+	email varchar(100) not null,
+	senha varchar(12) not null,
+    constraint pk_login primary key(email)
+);
+
+Login Administração: 
+Insert into LoginAdm (email, senha) values ('danila@gmail.com','123321');
+
+Login Anunciante:
+Insert into Anunciante (nomeAnunciante,nomeComercio,email,tipoComercio,valorPacote,senha,anunciosinseridosQtd,latlong,limite) values ('Danila Silva', 'Danila LTDA', 'danilasilva@hotmail.com','Vendedor',39.90,'123321',0,'(-13.0010719, -38.530658)',0);

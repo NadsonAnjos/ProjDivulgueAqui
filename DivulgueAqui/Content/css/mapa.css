@@ -1,0 +1,14 @@
+#map {
+        height: 400px;  /* The height is 400 pixels */
+        width: 99%;  /* The width is the width of the web page */
+       }
+       #loc-hide{
+        margin: 10px;
+       }
+       #location{
+        border-radius: 4px;
+       }
+
+       .localizacao{
+       	display: none;
+       }

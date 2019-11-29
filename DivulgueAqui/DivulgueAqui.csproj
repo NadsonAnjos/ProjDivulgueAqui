@@ -120,10 +120,16 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\CadastroController.cs" />
+    <Compile Include="Controllers\DashboardAdministracaoController.cs" />
+    <Compile Include="Controllers\DashboardAnuncianteController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Anunciante.cs" />
+    <Compile Include="Models\Faturamento.cs" />
+    <Compile Include="Models\Login.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -138,6 +144,8 @@
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="Scripts\JavaScript.js" />
+    <Content Include="Scripts\Detalhes.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
     <Content Include="Scripts\jquery-3.3.1.slim.js" />
@@ -159,13 +167,21 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\LoginAdm.cshtml" />
+    <Content Include="Views\Cadastro\CadastroAnunciante.cshtml" />
+    <Content Include="Views\Home\HomeDivulgueAqui.cshtml" />
+    <Content Include="Views\DashboardAnunciante\IndexAnunciante.cshtml" />
+    <Content Include="Views\DashboardAnunciante\Pagamentos.cshtml" />
+    <Content Include="Views\DashboardAdministracao\IndexAdministracao.cshtml" />
+    <Content Include="Views\Cadastro\EsqueceuSenha.cshtml" />
+    <Content Include="Views\DashboardAdministracao\Faturamento.cshtml" />
+    <Content Include="Views\DashboardAdministracao\Anunciantes.cshtml" />
+    <Content Include="Views\Home\LoginAnunciante.cshtml" />
+    <Content Include="Views\DashboardAdministracao\Detalhes.cshtml" />
+    <Content Include="Views\DashboardAnunciante\MeusAnuncios.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

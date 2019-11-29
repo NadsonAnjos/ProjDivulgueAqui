@@ -1,0 +1,23 @@
+ ----------- BEM VINDO (A) AO NOSSO TRABALHO DO PI 6 -------------
+Equipe: Nadson Anjos, Kelvin Gomes e Karine Silva.
+
+O site foi criado com o intuito de ilustrar como ficaria de forma básica o produto proposto, um site em que comerciantes poderão assinar um plano e de acordo com o mesmo, poder publicar "x" panfletos que serão divulgados entre os clientes deles. 
+(PS: Funções internas como CRUD, gerar boleto, inserir anúncio e cadastrar comerciante são ilustrativas.)
+
+
+-Utilizamos para desenvolver esse site a linguagem C#, com o Visual Studio Community 2017.
+
+Link para Download do VS Community 2017: 
+https://docs.microsoft.com/pt-br/visualstudio/releasenotes/vs2017-relnotes
+
+
+-Também Utilizamos o SQL Server para criar um banco de dados local e cadastrar de forma básica clientes e administradores, validando-os.
+
+1º- Download do SQL Server Versão Gratuita (Express): 
+https://www.microsoft.com/pt-br/download/details.aspx?id=56042
+2º- Marcar as opções SQLEXPRADV_x64_PTB.exe (2.0 GB) e PTB\x64\SqlLocalDB.msi (35.3 MB)
+
+Obs: As connections Strings nos controllers estão setadas como bancos locais, será necessário mudar o endereço do Server para o caminho de instalação do seu banco de dados apontando para o banco DivulgueAquiDB.mdf
+
+
+
